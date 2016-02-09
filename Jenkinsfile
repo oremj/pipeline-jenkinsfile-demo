@@ -11,7 +11,7 @@ node {
 stage 'a new branch'
 
 node {
-  20.times {
-    sh "echo test multibranch ${it}"
+  for (i = 0; i < 20; i++) {
+    sh "echo test multibranch ${i}"
   }
 }
